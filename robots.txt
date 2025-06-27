@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://yourwebsite.com/sitemap.xml
+
+# Disallow certain file types for better crawling efficiency
+Disallow: *.scss$
+Disallow: *.js.map$
+Disallow: *.css.map$
+
+# Allow important directories
+Allow: /assets/
+Allow: /src/
+
+# Host
+Host: https://yourwebsite.com

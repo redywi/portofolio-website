@@ -5,23 +5,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Made Redy Wijaya - Software Developer & AI Engineer. Experienced in PHP Laravel, Python AI, and Kotlin Android development. View my portfolio and projects.">
+    <meta name="keywords" content="software developer, AI engineer, PHP Laravel, Python, Kotlin, Android, web development, machine learning">
+    <meta name="author" content="Made Redy Wijaya">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Made Redy Wijaya - Software Developer & AI Engineer">
+    <meta property="og:description" content="Experienced in PHP Laravel, Python AI, and Kotlin Android development. View my portfolio and projects.">
+    <meta property="og:image" content="assets/portrait.png">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Made Redy Wijaya - Software Developer & AI Engineer">
+    <meta name="twitter:description" content="Experienced in PHP Laravel, Python AI, and Kotlin Android development.">
+    <meta name="twitter:image" content="assets/portrait.png">
+    
     <!-- favicon -->
     <link rel="icon" href="assets/logo2.png" type="image/x-icon">
-    <title>Portofolio Web</title>
+    <title>Made Redy Wijaya - Software Developer & AI Engineer Portfolio</title>
     <link rel="stylesheet" href="src/main.css">
     <link rel="stylesheet" href="src/animate.min.css">
     <link rel="stylesheet" href="src/aos.css">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/portrait.png" as="image">
+    <link rel="preload" href="assets/logo2.png" as="image">
+    
     <script src="src/bootstrap.bundle.min.js"></script>
     <script src="src/aos.js"></script>
+    <script src="src/performance.js" defer></script>
 
   </head>
-  <body id="home">
+  <body id="home" class="bg-light">
     <!-- navbar -->
       <nav class="navbar navbar-expand-lg custom-navbar py-3 animate__animated animate__fadeInDown">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="assets/logo2.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top rounded">
-          <span class="fw-bold text-white">Made Redy Wijaya</span>
+          <span class="fw-bold text-black">Made Redy Wijaya</span>
         </a>  
         <button class="navbar-toggler bg-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,19 +53,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto d-flex gap-3 text-center pt-lg-0 pt-4">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#home">Home</a>
+              <a class="nav-link text-black nav-hover" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#about">About</a>
+              <a class="nav-link text-black nav-hover" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#skills">Skills</a>
+              <a class="nav-link text-black nav-hover" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#projects">Projects</a>
+              <a class="nav-link text-black nav-hover" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#ask">Ask</a>
+              <a class="nav-link text-black nav-hover" href="#ask">Ask</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black nav-hover" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -57,13 +84,13 @@
             <h1 class="fw-bold">Hi, i'm <span class="text-success">Made Redy Wijaya</span><br>Software Developer & AI Engineer</h1>
 
             <p class="lh-lg mb-4">With a strong background in software and AI development, I love turning ideas into real digital experiences. Whether it's building scalable web apps or training machine learning models, I'm always excited to learn, create, and grow.</p>
-            <div>
-              <a href="#about" class="btn btn-success">About Me</a>
-              <a href="#skills" class="btn btn-outline-success">Skills</a>
+            <div class="hero-buttons">
+              <a href="#about" class="btn btn-success me-2 mb-2">About Me</a>
+              <a href="#skills" class="btn btn-outline-success mb-2">Skills</a>
             </div>
           </div>
           <div class="box animate__animated animate__fadeInRight animate__delay-1s">
-            <img src="assets/portrait.png" alt="Hero image">
+            <img src="assets/portrait.png" alt="Made Redy Wijaya - Software Developer & AI Engineer" loading="lazy">
           </div>
         </div>
       </div>
@@ -77,9 +104,10 @@
         <div class="about-box text-center">
           <h1 class="fw-bold mb-4" data-aos="fade-up" data-aos-duration="800">About Me</h1>
           <p class="lh-lg mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">IT graduate experienced in website, mobile app, and AI model development. Proficient in PHP, Python, Kotlin, and C++. Passionate about applying technical skills to innovate. Aspiring Full Stack or Front-End/Back-End Developer. Download below for my full CV and detailed resume.</p>
-          <a href="assets/Redy_Wijaya_CV.pdf" download="Redy_Wijaya_CV.pdf" class="btn btn-outline-danger text-black" style="font-size: 0.9rem;" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-            <img src="assets/i-download.png" alt="icon download"> Download CV
-          </a>
+            <a href="assets/Redy_Wijaya_CV.pdf" download="Redy_Wijaya_CV.pdf" class="btn btn-danger d-inline-flex align-items-center gap-2 px-4 py-2 shadow-lg rounded-pill fw-semibold" style="font-size: 1rem; letter-spacing: 0.5px;" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+            <img src="assets/i-download.png" alt="icon download" style="width: 22px; height: 22px;">
+            Download CV
+            </a>
         </div>
       </div>
     </section>
@@ -94,17 +122,17 @@
 
           <div class="box pt-4 d-flex gap-3 flex-md-row flex-column">
             <div class="skill p-4 shadow text-white rounded-4" style="background-image: url('../assets/bg-laravel.png'); background-size: cover; background-position: center;" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-              <img src="assets/i-laravel.png" alt="Skill Icon1" class="mb-3">
+              <img src="assets/i-laravel.png" alt="Laravel PHP Framework Icon" class="mb-3" loading="lazy">
               <h4 class="mb-3 fw-bold">PHP & Laravel</h4>
               <p class="lh-lg">Experienced in developing dynamic web apps using Laravel. Able to build REST APIs, manage databases, and implement MVC architecture effectively.</p>
             </div>
             <div class="skill p-4 shadow text-white rounded-4" style="background-image: url('assets/bg-python.png'); background-size: cover; background-position: center;" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-              <img src="assets/i-python.png" alt="Skill Icon2" class="mb-3">
+              <img src="assets/i-python.png" alt="Python Programming Language Icon" class="mb-3" loading="lazy">
               <h4 class="mb-3 fw-bold">Python & AI</h4>
               <p class="lh-lg">Skilled in using Python for data analysis and AI model development using libraries like TensorFlow, Scikit-learn, and Pandas.</p>
             </div>
             <div class="skill p-4 shadow text-white rounded-4" style="background-image: url('assets/bg-kotlin.png'); background-size: cover; background-position: center;" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-              <img src="assets/i-kotlin.png" alt="Skill Icon3" class="mb-3">
+              <img src="assets/i-kotlin.png" alt="Kotlin Programming Language Icon" class="mb-3" loading="lazy">
               <h4 class="mb-3 fw-bold">Kotlin & Android</h4>
               <p class="lh-lg">Developed mobile applications with Kotlin using Android Studio. Familiar with UI/UX principles, Jetpack components, and REST API integration.</p>
             </div>
@@ -123,58 +151,57 @@
 
           <div class="row justify-content-center pt-4 g-3">
             <div class="col col-md-4 col-12 shadow p-3 rounded" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-              <img src="assets/project-hibeauty.png" alt="Project Image1" width="100%">
+              <img src="assets/project-hibeauty.png" alt="HiBeauty Android Application Project Screenshot" width="100%" loading="lazy">
               <h4 class="pt-4 ">HiBeauty!</h4>
               <p>The <b>HiBeauty!</b> project is an android based application that functions to find skincare that is suitable for certain skin problems. This project meets the needs of the final capstone assignment at <b>Bangkit Academy</b></p>
               <div>
-                <a href="https://github.com/redywi/HiBeauty" target="_blank" class="btn btn-dark">Github</a>
-                <a href="https://drive.google.com/file/d/1Webv4S-Hi5yiSUG0vmuu7oqwOtrZH5wI/view
-" target="_blank" class="btn btn-danger">View Project</a>
+                <a href="https://github.com/redywi/HiBeauty" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Github</a>
+                <a href="https://drive.google.com/file/d/1Webv4S-Hi5yiSUG0vmuu7oqwOtrZH5wI/view" target="_blank" rel="noopener noreferrer" class="btn btn-danger">View Project</a>
               </div>
             </div>
-            <div class="col col-md-4 col-12 shadow p-3 rounded" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-              <img src="assets/project-sikalor.png" alt="Project Image2" width="100%">
+            <div class="col col-md-4 col-12 shadow p-3 rounded" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+              <img src="assets/project-sikalor.png" alt="SiKalor Calorie Management Android App" width="100%" loading="lazy">
               <h4 class="pt-4 ">SiKalor</h4>
               <p>The <b>SiKalor</b> project is an android based application that functions to manage the user's daily calorie needs. This project meets the needs of the final campus assignment</p>
               <div>
-                <a href="https://github.com/parhannn/sicalor-ta-project" target="_blank" class="btn btn-dark">Github</a>
-                <a href="#" target="_blank" class="btn btn-danger">View Project</a>
+                <a href="https://github.com/parhannn/sicalor-ta-project" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Github</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-danger disabled">View Project</a>
               </div>
             </div>
-            <div class="col col-md-4 col-12 shadow p-3 rounded" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-              <img src="assets/project-sitakes.png" alt="Project Image3" width="100%">
+            <div class="col col-md-4 col-12 shadow p-3 rounded" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+              <img src="assets/project-sitakes.png" alt="SiTakes Geographic Information System Web Application" width="100%" loading="lazy">
               <h4 class="pt-4 ">SiTakes</h4>
               <p>The <b>SiTakes</b> project is a web-based project that functions to find the nearest health unit in the Sukarame and Way Halim sub-districts. This project meets the needs of the final assignment for the <b>Geographic Information System</b> course</p>
               <div>
-                <a href="https://github.com/redywi/tubes-sig" target="_blank" class="btn btn-dark">Github</a>
-                <a href="https://sitakes.vercel.app/" target="_blank" class="btn btn-danger">View Project</a>
+                <a href="https://github.com/redywi/tubes-sig" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Github</a>
+                <a href="https://sitakes.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-danger">View Project</a>
               </div>
             </div>
-            <div class="col col-md-4 col-12 shadow p-3 rounded" data-aos="fade-up" data-aos-duration="800">
-              <img src="assets/project-handcal.png" alt="Project Image4" width="100%">
+            <div class="col col-md-4 col-12 shadow p-3 rounded" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+              <img src="assets/project-handcal.png" alt="Hand Sign Calculator Computer Vision Project" width="100%" loading="lazy">
               <h4 class="pt-4 ">Hand Sign Calculator</h4>
               <p>The <b>Hand Sign Calculator</b> project is a python project that functions to perform simple calculations by detecting the ROI from the user's hand. This project meets the needs of the final assignment for the <b>Multimedia</b> course</p>
               <div>
-                <a href="https://github.com/redywi/hand-sign-calculator" target="_blank" class="btn btn-dark">Github</a>
-                <a href="#" target="_blank" class="btn btn-danger">View Project</a>
+                <a href="https://github.com/redywi/hand-sign-calculator" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Github</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-danger disabled">View Project</a>
               </div>
             </div>
-            <div class="col col-md-4 col-12 shadow p-3 rounded" data-aos="fade-up" data-aos-duration="800">
-              <img src="assets/project-fooddetec.png" alt="Project Image4" width="100%">
+            <div class="col col-md-4 col-12 shadow p-3 rounded" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
+              <img src="assets/project-fooddetec.png" alt="Food YOLO Detection Machine Learning Project" width="100%" loading="lazy">
               <h4 class="pt-4 ">Food YOLO Detection</h4>
               <p>The <b>Food Yolo Detection</b> project is a YOLO model creation project that functions to detect food objects and calculate their calories. This project meets the needs of the final campus assignment</p>
               <div>
-                <a href="#" target="_blank" class="btn btn-dark">Github</a>
-                <a href="#" target="_blank" class="btn btn-danger">View Project</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-dark disabled">Github</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-danger disabled">View Project</a>
               </div>
             </div>
-            <div class="col col-md-4 col-12 shadow p-3 rounded" data-aos="fade-up" data-aos-duration="800">
-              <img src="assets/project-portoweb.png" alt="Project Image4" width="100%">
-              <h4 class="pt-4 ">Portofolio Website</h4>
+            <div class="col col-md-4 col-12 shadow p-3 rounded" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+              <img src="assets/project-portoweb.png" alt="Portfolio Website Project" width="100%" loading="lazy">
+              <h4 class="pt-4 ">Portfolio Website</h4>
               <p>The <b>Website Portfolio</b> project is a web-based project that functions as a personal portfolio.</p>
               <div>
-                <a href="#" target="_blank" class="btn btn-dark">Github</a>
-                <a href="#" target="_blank" class="btn btn-danger">View Project</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-dark disabled">Github</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-danger disabled">View Project</a>
               </div>
             </div>
           </div>
@@ -184,146 +211,189 @@
     <!-- project section -->
 
     <!-- ask section -->
-     <section class="ask" id="ask">
+    <section class="ask" id="ask">
       <div class="container">
-        <div class="ask-box">
-          <h1 class="fw-bold mb-3 text-center" data-aos="fade-up" data-aos-duration="800">Ask Me Anything</h1>
-          <p class="text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Here are some frequently asked questions about me, my skills, and my experiences.</p>
+      <div class="ask-box">
+        <h1 class="fw-bold mb-3 text-center" data-aos="fade-up" data-aos-duration="800">Ask Me Anything</h1>
+        <p class="text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Here are some frequently asked questions about me, my skills, and my experiences.</p>
 
-          <div class="accordion pt-4" id="accordionExample">
-            <div class="row row-cols-md-2 row-cols-1 g-4">
-              <div class="col">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed bg-success text-white fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      What is your favorite programming language?
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      I love using Python because it's powerful for AI and data projects, and very readable. I also enjoy working with PHP (Laravel) for web development and Kotlin for Android apps.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed bg-success text-white fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                      What kind of projects have you worked on?
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      I've developed a food recognition app using YOLO, built dynamic web applications with Laravel, and create. Android apps using Kotlin. I enjoy tackling real-world problems through code.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed bg-success text-white fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                      What tools or frameworks do you use regularly?
-                    </button>
-                  </h2>
-                  <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      I often work with Laravel, Android Studio, TensorFlow, and Scikit-learn. For version control and collaboration, I rely on Git, GitHub, and sometimes GitLab. I also enjoy using Figma for UI mockups.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed bg-success text-white fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                      How do you stay updated with new technologies?
-                    </button>
-                  </h2>
-                  <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      I regularly follow tech vids, take online courses, and experiment with new tools in side projects. Platforms like Medium, YouTube, and GitHub help me learn from real-world examples and open-source communities.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed bg-success text-white fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                      Are you comfortable working in a team?
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      Absolutely. I've worked on team projects during university, internships, and collaborations. I'm familiar with Git and Google Colab for team communication and task management.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed bg-success text-white fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                      Are you open to freelance or collaboration?
-                    </button>
-                  </h2>
-                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      Yes, I’m open to freelance opportunities, project-based work, or collaborations. Feel free to reach out via the contact section if you’d like to work together.
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="accordion pt-4" id="accordionExample">
+        <div class="row row-cols-md-2 row-cols-1 g-4">
+          <div class="col">
+          <div class="accordion-item ask-accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed ask-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              What is your favorite programming language?
+            </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body ask-accordion-body">
+              I love using Python because it's powerful for AI and data projects, and very readable. I also enjoy working with PHP (Laravel) for web development and Kotlin for Android apps.
+            </div>
             </div>
           </div>
+          </div>
+          <div class="col">
+          <div class="accordion-item ask-accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed ask-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              What kind of projects have you worked on?
+            </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body ask-accordion-body">
+              I've developed a food recognition app using YOLO, built dynamic web applications with Laravel, and create. Android apps using Kotlin. I enjoy tackling real-world problems through code.
+            </div>
+            </div>
+          </div>
+          </div>
+          <div class="col">
+          <div class="accordion-item ask-accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed ask-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+              What tools or frameworks do you use regularly?
+            </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body ask-accordion-body">
+              I often work with Laravel, Android Studio, TensorFlow, and Scikit-learn. For version control and collaboration, I rely on Git, GitHub, and sometimes GitLab. I also enjoy using Figma for UI mockups.
+            </div>
+            </div>
+          </div>
+          </div>
+          <div class="col">
+          <div class="accordion-item ask-accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed ask-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+              How do you stay updated with new technologies?
+            </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body ask-accordion-body">
+              I regularly follow tech vids, take online courses, and experiment with new tools in side projects. Platforms like Medium, YouTube, and GitHub help me learn from real-world examples and open-source communities.
+            </div>
+            </div>
+          </div>
+          </div>
+          <div class="col">
+          <div class="accordion-item ask-accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed ask-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              Are you comfortable working in a team?
+            </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body ask-accordion-body">
+              Absolutely. I've worked on team projects during university, internships, and collaborations. I'm familiar with Git and Google Colab for team communication and task management.
+            </div>
+            </div>
+          </div>
+          </div>
+          <div class="col">
+          <div class="accordion-item ask-accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed ask-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              Are you open to freelance or collaboration?
+            </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body ask-accordion-body">
+              Yes, I’m open to freelance opportunities, project-based work, or collaborations. Feel free to reach out via the contact section if you’d like to work together.
+            </div>
+            </div>
+          </div>
+          </div>
         </div>
+        </div>
+      </div>
       </div>
      </section>
     <!-- ask section -->
 
+    <!-- contact section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <h1 class="fw-bold mb-3 text-center" data-aos="fade-up" data-aos-duration="800">Get In Touch</h1>
+          <p class="text-center mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Ready to work together? Feel free to reach out for collaborations or just to say hello!</p>
+          
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <form class="contact-form" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Subject" required>
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-success btn-lg px-5">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section -->
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-success position-fixed d-none" style="bottom: 20px; right: 20px; z-index: 1000; border-radius: 50%; width: 50px; height: 50px;" title="Back to Top">
+      ↑
+    </button>
+
+    
+
     <!-- footer section -->
-     <section class="footer custom-navbar">
+     <section class="footer custom-footer">
       <div class="container">
         <div class="footer-box">
           <div class="row justify-content-between row-gap-4">
-            <div class="col col-md-4 col-12 text-white">
+            <div class="col col-md-4 col-12 text-black">
               <div class="d-flex align-items-center gap-2">
                 <img src="assets/logo2.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top rounded">
-                <h3 class="fw-bold text-white">Made Redy Wijaya</h3>
+                <h3 class="fw-bold text-black">Made Redy Wijaya</h3>
               </div>
               <p class="lh-lg opacity-75 m-0">Passionate about crafting clean, efficient, and scalable software solutions. Let's collaborate and bring great ideas to life through technology.</p>
             </div>
 
             <div class="col col-md-2 col-12 d-flex flex-column gap-2">
-              <h4 class="fw-bold text-white">Menu</h4>
-              <a href="#home" class="text-white text-decoration-none">Home</a>
-              <a href="#about" class="text-white text-decoration-none">About</a>
-              <a href="#skills" class="text-white text-decoration-none">Skills</a>
-              <a href="#projects" class="text-white text-decoration-none">Projects</a>
-              <a href="#ask" class="text-white text-decoration-none">Ask</a>
+              <h4 class="fw-bold text-black">Menu</h4>
+              <a href="#home" class="text-black text-decoration-none">Home</a>
+              <a href="#about" class="text-black text-decoration-none">About</a>
+              <a href="#skills" class="text-black text-decoration-none">Skills</a>
+              <a href="#projects" class="text-black text-decoration-none">Projects</a>
+              <a href="#ask" class="text-black text-decoration-none">Ask</a>
+              <a href="#contact" class="text-black text-decoration-none">Contact</a>
             </div>
 
-            <div class="col col-md-4 col-12 d-flex flex-column text-white gap-2">
-              <h4 class="fw-bold text-white">Contact Me</h4>
+            <div class="col col-md-4 col-12 d-flex flex-column text-black gap-2">
+              <h4 class="fw-bold text-black">Contact Me</h4>
               <p class="m-0 d-flex align-items-center gap-2">
-                <img src="assets/i-phone.png" alt="icon phone"> 
-                (+62) 8xx-xxxx-xxxx
+                <img src="assets/i-phone.png" alt="Phone icon"> 
+                <a href="tel:+6281234567890" class="text-black text-decoration-none">(+62) 812-3456-7890</a>
               </p>
               <p class="m-0 d-flex align-items-center gap-2">
-                <img src="assets/i-instagram.png" alt="icon instagram"> 
-                @redy.wi
+                <img src="assets/i-instagram.png" alt="Instagram icon"> 
+                <a href="https://instagram.com/redy.wi" target="_blank" rel="noopener noreferrer" class="text-black text-decoration-none">@redy.wi</a>
               </p>
               <p class="m-0 d-flex align-items-center gap-2">
-                <img src="assets/i-location.png" alt="icon location"> 
+                <img src="assets/i-location.png" alt="Location icon"> 
                 Bandar Lampung, Lampung, Indonesia
               </p>
             </div>
           </div>
         </div>
 
-        <div class="copyright text-center text-white">
+        <div class="copyright text-center text-black">
           <p class="lh-lg">&copy; 2025 <span class="fw-bold">Made Redy Wijaya</span>. All rights reserved.</p>
         </div>
       </div>
@@ -331,6 +401,76 @@
     <!-- footer section -->
 
 
-    <script>AOS.init();</script>
+    <script>
+      AOS.init();
+      
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      // Back to top button functionality
+      const backToTopButton = document.getElementById('backToTop');
+      
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.remove('d-none');
+          backToTopButton.classList.add('d-block');
+        } else {
+          backToTopButton.classList.remove('d-block');
+          backToTopButton.classList.add('d-none');
+        }
+      });
+
+      backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+
+      // Contact form handling (basic client-side validation)
+      document.querySelector('.contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Basic form validation
+        const inputs = this.querySelectorAll('input, textarea');
+        let isValid = true;
+        
+        inputs.forEach(input => {
+          if (!input.value.trim()) {
+            isValid = false;
+            input.classList.add('is-invalid');
+          } else {
+            input.classList.remove('is-invalid');
+          }
+        });
+        
+        if (isValid) {
+          // Here you would typically send the form data to a server
+          alert('Thank you for your message! I will get back to you soon.');
+          this.reset();
+        } else {
+          alert('Please fill in all required fields.');
+        }
+      });
+
+      // Add loading animation for images
+      document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+        img.addEventListener('load', function() {
+          this.style.opacity = '1';
+          this.style.transition = 'opacity 0.3s ease-in-out';
+        });
+      });
+    </script>
   </body>
 </html>

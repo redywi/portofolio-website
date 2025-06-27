@@ -6,14 +6,50 @@
  */
 
 section {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
 
 /* Navbar */
 .custom-navbar {
-  background: linear-gradient(90deg, #28a745, #20c997); /* gradasi hijau ke toska */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  font-weight: bold;
+  background: rgba(25, 135, 84, 0.25); /* hijau emerald 25% opacity */
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  box-shadow: 0 4px 30px rgba(25, 135, 84, 0.15);
+  border-bottom: 1px solid rgba(25, 135, 84, 0.18);
+  /* Glass shine gradient */
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Agar konten tidak tertutup navbar */
+body {
+  padding-top: 10px;  /* sesuaikan dengan tinggi navbar */
+  background: rgba(250, 250, 250);
+}
+
+/* Styling ikon toggler agar terlihat di atas glass */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);  /* buat icon hamburger putih */
+}
+
+.nav-hover:hover, .nav-hover:focus {
+  color: #198754 !important;
+  background-color: #e9ecef !important;
+  border-radius: 0.5rem;
+  transition: background 0.2s, color 0.2s;
 }
 /* Navbar */
 
@@ -93,8 +129,64 @@ section {
 
 
 /* ASK */
-.ask-box .accordion-button::after {
-  filter: invert(1) grayscale(100%) brightness(200%);
+
+/* Ask Section Custom Styles */
+.ask {
+  background: linear-gradient(135deg, #e0f7fa 0%, #fce4ec 100%);
+  padding: 60px 0 60px 0;
+}
+.ask-box h1 {
+  color: #2e7d32;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #b2dfdb;
+}
+.ask-box p {
+  color: #6d4c41;
+  font-size: 1.1rem;
+}
+.ask-accordion-item {
+  border-radius: 18px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 4px 24px 0 rgba(44, 62, 80, 0.08);
+  background: linear-gradient(120deg, #fffde7 0%, #e1bee7 100%);
+  margin-bottom: 10px;
+  transition: box-shadow 0.2s;
+}
+.ask-accordion-item:hover {
+  box-shadow: 0 8px 32px 0 rgba(44, 62, 80, 0.18);
+}
+.ask-accordion-btn {
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+  color: #222 !important;
+  font-weight: 700;
+  font-size: 1.05rem;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  transition: background 0.2s, color 0.2s;
+}
+.ask-accordion-btn:not(.collapsed) {
+  background: linear-gradient(90deg, #ff6a00 0%, #ee0979 100%);
+  color: #fff !important;
+}
+.ask-accordion-btn:focus {
+  box-shadow: 0 0 0 2px #43e97b55;
+}
+.ask-accordion-body {
+  background: rgba(255,255,255,0.95);
+  color: #4e342e;
+  font-size: 1rem;
+  border-top: 1px solid #e0e0e0;
+  padding: 1.25rem 1.5rem;
+}
+@media (max-width: 767px) {
+  .ask {
+    padding: 40px 0;
+  }
+  .ask-accordion-body {
+    font-size: 0.98rem;
+  }
 }
 /* ASK */
 
@@ -115,6 +207,23 @@ section {
 .copyright {
   margin-top: 100px;
 }
+
+/* Glass-style footer */
+.custom-footer {
+  position: relative;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  font-weight: bold;
+  background: rgba(25, 135, 84, 0.25); /* hijau emerald 25% opacity */
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  box-shadow: 0 -4px 30px rgba(25, 135, 84, 0.15);
+  border-top: 1px solid rgba(25, 135, 84, 0.18);
+  overflow: hidden;
+  padding: 1.5rem 0;
+}
+
 /* Footer */
 
 
