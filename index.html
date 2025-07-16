@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="src/main.css">
     <link rel="stylesheet" href="src/animate.min.css">
     <link rel="stylesheet" href="src/aos.css">
+    <link rel="stylesheet" href="src/github-pages-fix.css">
     
     <!-- Preload critical resources -->
     <link rel="preload" href="assets/portrait.png" as="image">
@@ -37,6 +38,40 @@
     <script src="src/bootstrap.bundle.min.js"></script>
     <script src="src/aos.js"></script>
     <script src="src/performance.js" defer></script>
+    
+    <!-- GitHub Pages Fix for Certificate Images -->
+    <style>
+      .certificate-image {
+        width: 100% !important;
+        height: 200px !important;
+        overflow: hidden !important;
+        position: relative !important;
+      }
+      
+      .certificate-image img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center !important;
+        display: block !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      
+      .certificate-card {
+        max-width: 100% !important;
+        overflow: hidden !important;
+      }
+      
+      @media (max-width: 768px) {
+        .certificate-image {
+          height: 150px !important;
+        }
+      }
+    </style>
 
   </head>
   <body id="home" class="bg-light">
@@ -226,7 +261,7 @@
             <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
               <div class="certificate-card">
                 <div class="certificate-image">
-                  <img src="assets/certificates/cert-bangkit.jpg" alt="Certificate" loading="lazy">
+                  <img src="assets/certificates/cert-bangkit.jpg" alt="Certificate" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; object-position: center;">
                   <div class="certificate-overlay">
                     <div class="certificate-info">
                       <i class="fas fa-external-link-alt"></i>
@@ -256,7 +291,7 @@
             <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
               <div class="certificate-card">
                 <div class="certificate-image">
-                  <img src="assets/certificates/cert-androidintermediate.jpg" alt="Certificate" loading="lazy">
+                  <img src="assets/certificates/cert-androidintermediate.jpg" alt="Certificate" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; object-position: center;">
                   <div class="certificate-overlay">
                     <div class="certificate-info">
                       <h5>Click to View Credential</h5>
@@ -286,7 +321,7 @@
             <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
               <div class="certificate-card">
                 <div class="certificate-image">
-                  <img src="assets/certificates/cert-mlandroid.jpg" alt="Certificate" loading="lazy">
+                  <img src="assets/certificates/cert-mlandroid.jpg" alt="Certificate" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; object-position: center;">
                   <div class="certificate-overlay">
                     <div class="certificate-info">
                       <h5>Click to View Credential</h5>
@@ -317,7 +352,7 @@
             <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
               <div class="certificate-card">
                 <div class="certificate-image">
-                  <img src="assets/certificates/cert-fundamentalandroid.jpg" alt="Certificate" loading="lazy">
+                  <img src="assets/certificates/cert-fundamentalandroid.jpg" alt="Certificate" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; object-position: center;">
                   <div class="certificate-overlay">
                     <div class="certificate-info">
                       <h5>Click to View Credential</h5>
@@ -346,7 +381,7 @@
             <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
               <div class="certificate-card">
                 <div class="certificate-image">
-                  <img src="assets/certificates/cert-beginnersandroid.jpg" alt="Certificate" loading="lazy">
+                  <img src="assets/certificates/cert-beginnersandroid.jpg" alt="Certificate" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; object-position: center;">
                   <div class="certificate-overlay">
                     <div class="certificate-info">
                       <h5>Click to View Credential</h5>
@@ -375,7 +410,7 @@
             <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
               <div class="certificate-card">
                 <div class="certificate-image">
-                  <img src="assets/certificates/cert-kotlinandroid.jpg" alt="Certificate" loading="lazy">
+                  <img src="assets/certificates/cert-kotlinandroid.jpg" alt="Certificate" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; object-position: center;">
                   <div class="certificate-overlay">
                     <div class="certificate-info">
                       <h5>Click to View Credential</h5>

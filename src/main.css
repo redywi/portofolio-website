@@ -266,7 +266,11 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   transition: transform 0.3s ease;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .certificate-image:hover img {
@@ -423,6 +427,61 @@ body {
   .stat-number {
     font-size: 2rem;
   }
+}
+
+/* Additional fixes for GitHub Pages */
+.certificate-card {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.certificate-image {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.certificate-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  display: block !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Force consistent sizing across all environments */
+.certificates .row {
+  margin: 0 -15px;
+}
+
+.certificates .col-lg-4,
+.certificates .col-md-6,
+.certificates .col-12 {
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+/* Prevent image overflow */
+.certificate-card * {
+  box-sizing: border-box;
+}
+
+/* GitHub Pages specific fixes */
+.certificate-image::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #f8f9fa;
 }
 
 :root,
