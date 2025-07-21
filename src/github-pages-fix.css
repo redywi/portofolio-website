@@ -1,0 +1,184 @@
+/* GitHub Pages Fix for Certificate Images */
+/* This file contains fixes specifically for GitHub Pages deployment */
+
+/* Force certificate image container sizing */
+.certificate-image {
+  width: 100% !important;
+  height: 200px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  display: block !important;
+  box-sizing: border-box !important;
+}
+
+/* Force certificate image sizing */
+.certificate-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  outline: none !important;
+  box-sizing: border-box !important;
+}
+
+/* Fix certificate card container */
+.certificate-card {
+  max-width: 100% !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+/* Prevent any image from breaking out */
+.certificates img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Specific fixes for certificate images */
+.certificates .certificate-image img {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+/* Grid system fixes */
+.certificates .row {
+  margin-left: -15px !important;
+  margin-right: -15px !important;
+}
+
+.certificates .col-lg-4,
+.certificates .col-md-6,
+.certificates .col-12 {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  margin-bottom: 30px !important;
+}
+
+/* Mobile responsive fixes */
+@media (max-width: 768px) {
+  .certificate-image {
+    height: 150px !important;
+  }
+  
+  .certificates .certificate-image img {
+    height: 150px !important;
+  }
+}
+
+/* Tablet responsive fixes */
+@media (max-width: 992px) {
+  .certificate-image {
+    height: 180px !important;
+  }
+  
+  .certificates .certificate-image img {
+    height: 180px !important;
+  }
+}
+
+/* Large screen fixes */
+@media (min-width: 1200px) {
+  .certificate-image {
+    height: 220px !important;
+  }
+  
+  .certificates .certificate-image img {
+    height: 220px !important;
+  }
+}
+
+/* Override any conflicting styles */
+.certificate-image * {
+  box-sizing: border-box !important;
+}
+
+/* Ensure proper aspect ratio */
+.certificate-image::before {
+  content: '' !important;
+  display: block !important;
+  width: 100% !important;
+  height: 200px !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: -1 !important;
+  background: #f8f9fa !important;
+}
+
+/* Force consistent behavior across browsers */
+.certificate-image img:not([src]) {
+  display: none !important;
+}
+
+/* Prevent image distortion */
+.certificate-image img[src] {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Fix for lazy loading */
+.certificate-image img[loading="lazy"] {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Additional fallback styles */
+.certificates section {
+  overflow-x: hidden !important;
+}
+
+.certificates .container {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+.certificates .row {
+  overflow-x: hidden !important;
+}
+
+/* Remove any transforms that might cause issues */
+.certificate-image img {
+  transform: none !important;
+}
+
+.certificate-image:hover img {
+  transform: scale(1.05) !important;
+}
+
+/* Ensure proper image loading */
+.certificate-image img {
+  image-rendering: -webkit-optimize-contrast !important;
+  image-rendering: optimize-contrast !important;
+  image-rendering: crisp-edges !important;
+}
+
+/* Fix for GitHub Pages specific issues */
+@supports (-webkit-appearance: none) {
+  .certificate-image img {
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+  }
+}
+
+/* Print media fixes */
+@media print {
+  .certificate-image {
+    height: 150px !important;
+  }
+  
+  .certificate-image img {
+    height: 150px !important;
+  }
+}
