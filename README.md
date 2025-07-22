@@ -182,10 +182,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👤 Author
 
 **Made Redy Wijaya**
-- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/made-redy-wijaya)
-- GitHub: [Your GitHub](https://github.com/redywi)
-- Email: redy.wijaya@gmail.com
-- Portfolio: [Your Website](https://redywi.github.io/portofolio-website)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/made-redy-wijaya)
+- GitHub: [GitHub](https://github.com/redywi)
+- Email: redy.wijaya24@gmail.com
+- Portfolio: [Website](https://redywi.github.io/portofolio-website)
 
 ## 🙏 Acknowledgments
 
